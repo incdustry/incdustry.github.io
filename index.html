@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fuera de Servicio</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type="text/css">
+		body { font-family: 'Roboto', sans-serif; letter-spacing: 1.5px; line-height: 1; font-weight: 100; text-transform: uppercase; }
+		.page-container { position: fixed; width: 100%; height: 100%; }
+		.page-content { position: absolute; width: 100%; height: calc(100% - 68px); margin-bottom: 68px; background-color: #2b6ca9; }
+		.fuera-servicio { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%); text-align: center; color: #fff; }
+		.icono { position: relative; padding: 0 250px; display: inline-block; }
+		img { width: 200px; position: relative; margin: 0 auto; }
+		.icono::before, .icono::after { position: absolute; content: ""; width: calc((100% - 200px)/2); height: 5px; background-color: #e2e7e8; top: 50%; left: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); left: 0; }
+		.icono::after { left: auto; right: 0; }
+		h1 { font-size: 32px; margin: 0; font-weight: 100; padding: 30px 0px; }
+		h2 { font-size: 14px; font-weight: 700; margin: 0; }
+		.pb-3 { padding-bottom: 3px; }
+		.footer { position: absolute; bottom: 0; width: 100%; padding: 28px 0px; background-color: #003464; text-align: center; color: #fff; font-size: 12px; }
+		@media (max-width: 480px ){
+
+			.icono { position: relative; padding: 0 60px; }
+			h1 { font-size: 26px }
+			.icono::before, .icono::after { width: calc((100% - 180px)/2); }
+			img { width: 180px; }
+
+		}
+		@media (max-width: 380px ){
+
+			.icono { position: relative; padding: 0 60px; }
+			h1 { font-size: 20px }
+			.icono::before, .icono::after { width: calc((100% - 150px)/2); }
+			img { width: 150px; }
+
+		}
+	</style>
+  </head>
+  <body>
+  	<div class="page-container">
+  		<div class="page-content">
+  			<div class="fuera-servicio">
+  				<div class="icono">
+  					<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5MCA0OTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ5MCA0OTA7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KPGc+Cgk8cGF0aCBkPSJNMjQ1LDQ5MGMxMzUuMzEsMCwyNDUtMTA5LjY4OSwyNDUtMjQ1QzQ5MCwxMDkuNjksMzgwLjMxLDAsMjQ1LDBTMCwxMDkuNjksMCwyNDVDMCwzODAuMzExLDEwOS42OSw0OTAsMjQ1LDQ5MHogICAgTTI0NSwzMC42MjVjMTE4LjIwNiwwLDIxNC4zNzUsOTYuMTY5LDIxNC4zNzUsMjE0LjM3NWMwLDExOC4yMDctOTYuMTY5LDIxNC4zNzUtMjE0LjM3NSwyMTQuMzc1UzMwLjYyNSwzNjMuMjA3LDMwLjYyNSwyNDUgICBDMzAuNjI1LDEyNi43OTQsMTI2Ljc5NCwzMC42MjUsMjQ1LDMwLjYyNXoiIGZpbGw9IiNGRkZGRkYiLz4KCTxwb2x5Z29uIHBvaW50cz0iMTI4LjI5NywyMjIuODk5IDE0Ni4wNzcsMjg5LjYyMiAxNjUuMTg4LDI4OS42MjIgMTg2Ljg3MSwyMDAuMzc4IDE2OC43MzIsMjAwLjM3OCAxNTUuMDM0LDI2Mi43MiAgICAxMzkuMzc4LDIwMC4zNzggMTE3Ljk0OSwyMDAuMzc4IDEwMS42MzUsMjYxLjY3MyA4OC4xNzcsMjAwLjM3OCA2OS43MjQsMjAwLjM3OCA5MS4wMzMsMjg5LjYyMiAxMTAuNTc3LDI4OS42MjIgICIgZmlsbD0iI0ZGRkZGRiIvPgoJPHBvbHlnb24gcG9pbnRzPSIyMjguMjYyLDI4OS42MjIgMjQ1Ljk4MiwyMjIuODk5IDI2My43NjIsMjg5LjYyMiAyODIuODczLDI4OS42MjIgMzA0LjU1NiwyMDAuMzc4IDI4Ni40MTcsMjAwLjM3OCAgICAyNzIuNzE5LDI2Mi43MiAyNTcuMDYzLDIwMC4zNzggMjM1LjYzNCwyMDAuMzc4IDIxOS4zMiwyNjEuNjczIDIwNS44NjIsMjAwLjM3OCAxODcuNDA5LDIwMC4zNzggMjA4LjcxOCwyODkuNjIyICAiIGZpbGw9IiNGRkZGRkYiLz4KCTxwb2x5Z29uIHBvaW50cz0iMzQ1Ljk0NywyODkuNjIyIDM2My42NjcsMjIyLjg5OSAzODEuNDQ3LDI4OS42MjIgNDAwLjU1OCwyODkuNjIyIDQyMi4yNDEsMjAwLjM3OCA0MDQuMTAyLDIwMC4zNzggICAgMzkwLjQwNCwyNjIuNzIgMzc0Ljc0OCwyMDAuMzc4IDM1My4zMTksMjAwLjM3OCAzMzcuMDA1LDI2MS42NzMgMzIzLjU0NywyMDAuMzc4IDMwNS4wOTQsMjAwLjM3OCAzMjYuNDAzLDI4OS42MjIgICIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+  				</div>
+  				<h1>incdustry.github.io</h1>
+  				<h2 class="pb-3">En mantenimiento</h2>
+  				<h2>Temporalmente Fuera de Servicio</h2>
+  			</div>
+  		</div>
+  		<div class="footer">
+  			&copy;2020 - Todos los derechos reservados
+  		</div>
+  	</div>
+  </body>
+</html>
